@@ -97,7 +97,6 @@ public class WalletServiceImpl implements WalletServices {
             transaction.setBeneficiaryName(user.getFirstName() + " " + user.getLastName());
             transaction.setNarration(request.narration());
             transaction.setTransactionCategory(TransactionCategory.SPENDLY);
-            transaction.setTransactionStatus(TransactionStatus.SUCCESSFUL);
             transaction.setReference(generateTxRef());
             transaction.setCreatedDate(LocalDateTime.now());
             transaction.setBeneficiaryBank("Spendly");
